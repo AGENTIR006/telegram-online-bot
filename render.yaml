@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-online
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python telegram_bot.py
+    envVars:
+      - key: API_ID
+        value: 27611286
+      - key: API_HASH
+        value: 50649b84fb866096d61639d318790961
+      - key: PHONE
+        value: +375259620335
